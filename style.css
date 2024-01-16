@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: #00426c;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home {
+  gap: 5px;
+  height: calc(100% - 10px);
+  padding: 5px;
+  display: none;
+}
+
+.main {
+  position: relative;
+  flex: 0.7;
+  background-color: #a6ceff;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.status {
+  flex: 0.3;
+  background-color: #a6ceff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.status_submit {
+  background-color: #de9f1e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 90%;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+}
+
+/* STATUS */
+
+.status {
+  padding: 30px 20px;
+}
+
+.status_count {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.status_count_item {
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #c2c2a9;
+  color: #00426c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #00426c;
+}
+
+.status_count_item.marked {
+  background-color: #00426c;
+  color: white;
+}
+
+/* Question */
+
+.question {
+  padding: 40px 20px;
+  position: relative;
+  height: 80vh;
+}
+
+.question_title {
+  color: #2d475e;
+  font-size: 35px;
+}
+
+.question_label {
+  color: #2d475e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question_action {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.question_action_next,
+.question_action_prev {
+  background-color: #de9f1e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.question_action_prev.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.question_action_next.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #00436c7f;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal_box {
+  background-color: #0b0b29;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.model_box_title {
+  color: #de9f1e;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.model_box_button {
+  background-color: #de9f1e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.score {
+  color: greenyellow;
+}
+
+/* Intro */
+
+.intro {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.intro_box {
+  background-color: #a6ceff;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.intro_box_title {
+  font-size: 30px;
+  padding: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro_box_title span {
+  color: darkred;
+}
+
+.intro_box_button {
+  background-color: #de9f1e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.main_timer {
+  width: 100px;
+  height: 100px;
+  background-color: #00426c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 10;
+}
+
+.main_timer_wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #a6ceff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00426c;
+}
+
+.green-bg {
+  background-color: greenyellow;
+}
+
+.red-bg {
+  background-color: red;
+}
